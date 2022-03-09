@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Shopee</string>
+    <string name="wallet_desc">Isi Saldo ShopeePay</string>
+    <string name="wallet_amount">Rp16.000</string>
+    <string name="coin_desc">Klaim koin disini</string>
+    <string name="coin_amount_text">5 Koin</string>
+    <string name="peduli_lindungi_text">PeduliLindungi</string>
+    <string name="pulsa_text"><![CDATA[Pulsa, Tagihan & Hiburan]]></string>
+    <string name="supermarket_text">Shopee Supermarket</string>
+    <string name="mall_text">Shopee Mall</string>
+    <string name="deals_text">Deals Seller</string>
 </resources>

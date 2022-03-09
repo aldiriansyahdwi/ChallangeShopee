@@ -12,7 +12,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
     <ImageView
         android:id="@+id/promo_bg"
@@ -32,6 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="15dp"/>
     <ImageButton
+        android:id="@+id/promo_one"
         android:layout_width="0dp"
         android:layout_height="75dp"
         app:layout_constraintWidth_percent="0.6"
@@ -42,14 +43,203 @@
         app:layout_constraintStart_toStartOf="@id/promo_dot_list"
         app:layout_constraintEnd_toEndOf="@id/promo_dot_list"
         />
+    <ImageView
+        android:id="@+id/finance_bg"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/promo_dot_list"
+        app:layout_constraintWidth_percent="0.9"
+        android:background="@drawable/shadow_finance"
+        />
+    <ImageView
+        android:id="@+id/scan_btn"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:src="@drawable/ic_scan"
+        app:layout_constraintTop_toTopOf="@id/finance_bg"
+        app:layout_constraintBottom_toBottomOf="@id/finance_bg"
+        app:layout_constraintStart_toStartOf="@id/finance_bg"
+        app:layout_constraintEnd_toStartOf="@id/balance_desc"
+        />
+    <ImageView
+        android:id="@+id/balance_ic"
+        android:layout_width="@dimen/small_button_size"
+        android:layout_height="@dimen/small_button_size"
+        android:src="@drawable/ic_wallet"
+        app:layout_constraintStart_toStartOf="@id/balance_desc"
+        app:layout_constraintTop_toTopOf="@id/scan_btn"
+
+        />
+    <TextView
+        android:id="@+id/balance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_height"
+        app:layout_constraintTop_toTopOf="@id/balance_ic"
+        app:layout_constraintStart_toEndOf="@id/balance_ic"
+        app:layout_constraintBottom_toBottomOf="@id/balance_ic"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+        android:text="@string/wallet_amount"
+        />
+    <TextView
+        android:id="@+id/balance_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintTop_toBottomOf="@id/balance_ic"
+        app:layout_constraintStart_toEndOf="@id/scan_btn"
+        app:layout_constraintEnd_toStartOf="@id/coin_desc"
+        android:textColor="@color/gray"
+        android:text="@string/wallet_desc"
+        android:textSize="@dimen/tiny_text_size"/>
+    <ImageView
+        android:id="@+id/coin_ic"
+        android:layout_width="@dimen/small_button_size"
+        android:layout_height="@dimen/small_button_size"
+        android:src="@drawable/ic_coin"
+        app:layout_constraintTop_toTopOf="@id/scan_btn"
+        app:layout_constraintStart_toStartOf="@id/coin_desc"
+        />
+    <TextView
+        android:id="@+id/coin_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_height"
+        app:layout_constraintTop_toTopOf="@id/coin_ic"
+        app:layout_constraintStart_toEndOf="@id/coin_ic"
+        app:layout_constraintBottom_toBottomOf="@id/coin_ic"
+        android:textSize="@dimen/small_text_size"
+        android:text="@string/coin_amount_text"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/coin_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/coin_ic"
+        app:layout_constraintStart_toEndOf="@id/balance_desc"
+        app:layout_constraintEnd_toEndOf="@id/finance_bg"
+        app:layout_constraintWidth_percent="0.35"
+        android:text="@string/coin_desc"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/tiny_text_size"
+        />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/finance_bg"
+        app:layout_constraintStart_toStartOf="@id/finance_bg"
+        android:layout_marginTop="@dimen/margin_height"
+        android:scrollbars="none">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/peduli_lindungi_btn"
+                android:layout_width="@dimen/feature_btn_size"
+                android:layout_height="@dimen/feature_btn_size"
+                android:src="@drawable/ic_peduli_lindungi"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/start_width_feature"
+                android:background="@drawable/shadow_feature"
+                />
+            <TextView
+                android:layout_width="@dimen/feature_text_size"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/peduli_lindungi_btn"
+                app:layout_constraintStart_toStartOf="@id/peduli_lindungi_btn"
+                app:layout_constraintEnd_toEndOf="@id/peduli_lindungi_btn"
+                android:text="@string/peduli_lindungi_text"/>
+            <ImageView
+                android:id="@+id/pulsa_btn"
+                android:layout_width="@dimen/feature_btn_size"
+                android:layout_height="@dimen/feature_btn_size"
+                android:src="@drawable/ic_pulsa"
+                android:scaleType="fitCenter"
+                android:background="@drawable/shadow_feature"
+                app:layout_constraintStart_toEndOf="@id/peduli_lindungi_btn"
+                app:layout_constraintTop_toTopOf="@id/peduli_lindungi_btn"
+                android:layout_marginStart="@dimen/range_per_feature"
+                />
+            <TextView
+                android:layout_width="@dimen/feature_text_size"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/pulsa_btn"
+                app:layout_constraintStart_toStartOf="@id/pulsa_btn"
+                app:layout_constraintEnd_toEndOf="@id/pulsa_btn"
+                android:gravity="center"
+                android:text="@string/pulsa_text"/>
+            <ImageView
+                android:id="@+id/supermarket_btn"
+                android:layout_width="@dimen/feature_btn_size"
+                android:layout_height="@dimen/feature_btn_size"
+                app:layout_constraintTop_toTopOf="@id/peduli_lindungi_btn"
+                app:layout_constraintStart_toEndOf="@id/pulsa_btn"
+                android:src="@drawable/ic_supermarket"
+                android:scaleType="fitCenter"
+                android:background="@drawable/shadow_feature"
+                android:layout_marginStart="@dimen/range_per_feature"/>
+            <TextView
+                android:layout_width="@dimen/feature_text_size"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/supermarket_btn"
+                app:layout_constraintStart_toStartOf="@id/supermarket_btn"
+                app:layout_constraintEnd_toEndOf="@id/supermarket_btn"
+                android:gravity="center"
+                android:text="@string/supermarket_text"/>
+            <ImageView
+                android:id="@+id/mall_btn"
+                android:layout_width="@dimen/feature_btn_size"
+                android:layout_height="@dimen/feature_btn_size"
+                app:layout_constraintTop_toTopOf="@id/peduli_lindungi_btn"
+                app:layout_constraintStart_toEndOf="@id/supermarket_btn"
+                android:layout_marginStart="@dimen/range_per_feature"
+                android:src="@drawable/ic_mall"
+                android:scaleType="fitCenter"
+                android:background="@drawable/shadow_feature"/>
+            <TextView
+                android:layout_width="@dimen/feature_text_size"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/mall_btn"
+                app:layout_constraintStart_toStartOf="@id/mall_btn"
+                app:layout_constraintEnd_toEndOf="@id/mall_btn"
+                android:gravity="center"
+                android:text="@string/mall_text"/>
+            <ImageView
+                android:layout_width="@dimen/feature_btn_size"
+                android:layout_height="@dimen/feature_btn_size"
+                android:id="@+id/deals_btn"
+                app:layout_constraintTop_toTopOf="@id/peduli_lindungi_btn"
+                app:layout_constraintStart_toEndOf="@id/mall_btn"
+                android:layout_marginStart="@dimen/range_per_feature"
+                android:src="@drawable/ic_deals"
+                android:scaleType="fitCenter"
+                android:background="@drawable/shadow_feature"/>
+            <TextView
+                android:layout_width="@dimen/feature_text_size"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/deals_btn"
+                app:layout_constraintStart_toStartOf="@id/deals_btn"
+                app:layout_constraintEnd_toEndOf="@id/deals_btn"
+                android:gravity="center"
+                android:text="@string/deals_text"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+
 
 
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -57,67 +247,71 @@
             android:id="@+id/header_bg"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/orange_shopee_secondary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight="60dp"
-            android:background="@color/orange_shopee_secondary"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/search_bg"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintTop_toTopOf="@id/search_button"
-            app:layout_constraintStart_toStartOf="@id/search_button"
-            app:layout_constraintEnd_toEndOf="@id/search_button"
-            app:layout_constraintBottom_toBottomOf="@id/search_button"
-            app:layout_constraintHeight="40dp"
-            app:layout_constraintWidth_percent="0.6"
             android:background="@drawable/small_rounded_corner"
-            android:backgroundTint="@color/white"/>
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/search_button"
+            app:layout_constraintEnd_toEndOf="@id/search_button"
+            app:layout_constraintHeight="40dp"
+            app:layout_constraintStart_toStartOf="@id/search_button"
+            app:layout_constraintTop_toTopOf="@id/search_button"
+            app:layout_constraintWidth_percent="0.6" />
+
         <SearchView
             android:id="@+id/search_button"
-            android:queryHint="Celana olahraga pria pendek"
-            android:layout_marginStart="@dimen/start_margin"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintTop_toTopOf="@id/header_bg"
-            app:layout_constraintStart_toStartOf="@id/header_bg"
+            android:layout_marginStart="@dimen/start_margin"
+            android:queryHint="Celana olahraga pria pendek"
             app:layout_constraintBottom_toBottomOf="@id/header_bg"
             app:layout_constraintHeight="40dp"
-            app:layout_constraintWidth_percent="0.6"/>
+            app:layout_constraintStart_toStartOf="@id/header_bg"
+            app:layout_constraintTop_toTopOf="@id/header_bg"
+            app:layout_constraintWidth_percent="0.6" />
+
         <ImageButton
             android:id="@+id/cart_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
-            android:src="@drawable/ic_cart"
-            android:scaleType="fitCenter"
             android:background="@null"
-            app:layout_constraintStart_toEndOf="@id/search_button"
-            app:layout_constraintTop_toTopOf="@id/search_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_cart"
             app:layout_constraintBottom_toBottomOf="@id/search_button"
-            app:layout_constraintEnd_toStartOf="@id/chat_button"/>
+            app:layout_constraintEnd_toStartOf="@id/chat_button"
+            app:layout_constraintStart_toEndOf="@id/search_button"
+            app:layout_constraintTop_toTopOf="@id/search_button" />
+
         <ImageButton
             android:id="@+id/chat_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
-            android:src="@drawable/ic_chat"
-            android:scaleType="fitCenter"
             android:background="@null"
-            app:layout_constraintStart_toEndOf="@id/cart_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_chat"
+            app:layout_constraintBottom_toBottomOf="@id/search_button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/search_button"
-            app:layout_constraintBottom_toBottomOf="@id/search_button"/>
+            app:layout_constraintStart_toEndOf="@id/cart_button"
+            app:layout_constraintTop_toTopOf="@id/search_button" />
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
             app:itemTextColor="@color/black"
+            app:labelVisibilityMode="labeled"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:menu="@menu/bottom_menu"
-            app:labelVisibilityMode="labeled"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_menu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
