@@ -15,6 +15,7 @@
     tools:context=".MainActivity"
     android:paddingBottom="60dp">
     <ImageView
+        android:contentDescription="@string/promo_section"
         android:id="@+id/promo_bg"
         android:layout_width="match_parent"
         android:layout_height="180dp"
@@ -23,6 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@color/orange_shopee_secondary"/>
     <ImageView
+        android:contentDescription="@string/promo_section"
         android:id="@+id/promo_dot_list"
         android:layout_width="@dimen/button_size"
         android:layout_height="@dimen/button_size"
@@ -32,6 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="15dp"/>
     <ImageButton
+        android:contentDescription="@string/promo_section"
         android:id="@+id/promo_one"
         android:layout_width="0dp"
         android:layout_height="75dp"
@@ -44,6 +47,7 @@
         app:layout_constraintEnd_toEndOf="@id/promo_dot_list"
         />
     <ImageView
+        android:contentDescription="@string/finance_section"
         android:id="@+id/finance_bg"
         android:layout_width="0dp"
         android:layout_height="60dp"
@@ -54,6 +58,7 @@
         android:background="@drawable/shadow_finance"
         />
     <ImageView
+        android:contentDescription="@string/finance_section"
         android:id="@+id/scan_btn"
         android:layout_width="@dimen/button_size"
         android:layout_height="@dimen/button_size"
@@ -64,6 +69,7 @@
         app:layout_constraintEnd_toStartOf="@id/balance_desc"
         />
     <ImageView
+        android:contentDescription="@string/finance_section"
         android:id="@+id/balance_ic"
         android:layout_width="@dimen/small_button_size"
         android:layout_height="@dimen/small_button_size"
@@ -96,6 +102,7 @@
         android:text="@string/wallet_desc"
         android:textSize="@dimen/tiny_text_size"/>
     <ImageView
+        android:contentDescription="@string/finance_section"
         android:id="@+id/coin_ic"
         android:layout_width="@dimen/small_button_size"
         android:layout_height="@dimen/small_button_size"
@@ -139,6 +146,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
+                android:contentDescription="@string/feature_section"
                 android:id="@+id/peduli_lindungi_btn"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -160,6 +168,7 @@
                 android:gravity="center"
                 android:textColor="@color/black"/>
             <ImageView
+                android:contentDescription="@string/feature_section"
                 android:id="@+id/pulsa_btn"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -181,6 +190,7 @@
                 android:textSize="@dimen/tiny_text_size"
                 android:textColor="@color/black"/>
             <ImageView
+                android:contentDescription="@string/feature_section"
                 android:id="@+id/supermarket_btn"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -201,6 +211,7 @@
                 android:textSize="@dimen/tiny_text_size"
                 android:textColor="@color/black"/>
             <ImageView
+                android:contentDescription="@string/feature_section"
                 android:id="@+id/mall_btn"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -221,6 +232,7 @@
                 android:textSize="@dimen/tiny_text_size"
                 android:textColor="@color/black"/>
             <ImageView
+                android:contentDescription="@string/feature_section"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
                 android:id="@+id/deals_btn"
@@ -241,6 +253,7 @@
                 android:textSize="@dimen/tiny_text_size"
                 android:textColor="@color/black"/>
             <ImageView
+                android:contentDescription="@string/feature_section"
                 android:id="@+id/voucher_btn"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -261,6 +274,7 @@
                 android:textSize="@dimen/tiny_text_size"
                 android:textColor="@color/black"/>
             <ImageView
+                android:contentDescription="@string/feature_section"
                 android:id="@+id/games_btn"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -281,6 +295,7 @@
                 android:textSize="@dimen/tiny_text_size"
                 android:textColor="@color/black"/>
             <ImageView
+                android:contentDescription="@string/feature_section"
                 android:id="@+id/cod_btn"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -301,6 +316,7 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/tiny_text_size"/>
             <ImageView
+                android:contentDescription="@string/feature_section"
                 android:id="@+id/food_btn"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -321,6 +337,7 @@
                 android:gravity="center"
                 android:textColor="@color/black"/>
             <ImageView
+                android:contentDescription="@string/feature_section"
                 android:id="@+id/satu_rupiah_btn"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -352,6 +369,7 @@
         android:progressTint="@color/orange_shopee"
         app:layout_constraintEnd_toEndOf="parent"/>
     <ImageView
+        android:contentDescription="@string/ads_section"
         android:id="@+id/ads_one"
         android:layout_width="0dp"
         android:layout_height="100dp"
@@ -362,6 +380,7 @@
         app:layout_constraintWidth_percent="0.6"
         />
     <ImageView
+        android:contentDescription="@string/ads_section"
         android:id="@+id/ads_two"
         android:layout_width="0dp"
         android:layout_height="100dp"
@@ -371,6 +390,7 @@
         app:layout_constraintWidth_percent="0.2"
         app:layout_constraintEnd_toEndOf="@id/finance_bg"/>
     <ImageView
+        android:contentDescription="@string/borderline"
         android:id="@+id/borderline"
         android:layout_width="match_parent"
         android:layout_height="5dp"
@@ -387,6 +407,7 @@
         android:textColor="@color/orange_shopee"
         android:textSize="@dimen/medium_text_size"/>
     <ImageView
+        android:contentDescription="@string/flash_sale_section"
         android:layout_marginStart="@dimen/margin_height"
         android:layout_width="80dp"
         android:layout_height="20dp"
@@ -396,6 +417,7 @@
         android:src="@drawable/flash_sale_timer"
         />
     <ImageView
+        android:contentDescription="@string/flash_sale_section"
         android:id="@+id/lainnya_btn"
         android:layout_width="20dp"
         android:layout_height="20dp"
@@ -428,6 +450,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:layout_marginTop="@dimen/margin_height"
                 android:id="@+id/product_one_img"
                 android:layout_width="@dimen/width_product"
@@ -459,12 +482,14 @@
                 android:textColor="@color/orange_shopee"
                 android:gravity="center"/>
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
                 app:layout_constraintBottom_toTopOf="@id/product_one_price"
                 app:layout_constraintStart_toStartOf="@id/product_one_img"
                 android:src="@drawable/ic_gratis_ongkir"/>
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:id="@+id/discount_banner_one"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -484,6 +509,7 @@
                 android:textColor="@color/orange_shopee"
                 />
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:id="@+id/product_two_img"
                 android:layout_width="@dimen/width_product"
                 android:layout_height="@dimen/height_product"
@@ -515,12 +541,14 @@
                 android:textColor="@color/orange_shopee"
                 android:gravity="center"/>
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
                 app:layout_constraintBottom_toTopOf="@id/product_two_price"
                 app:layout_constraintStart_toStartOf="@id/product_two_img"
                 android:src="@drawable/ic_gratis_ongkir"/>
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:id="@+id/discount_banner_two"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -540,6 +568,7 @@
                 android:textColor="@color/orange_shopee"
                 />
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:id="@+id/product_three_img"
                 android:layout_width="@dimen/width_product"
                 android:layout_height="@dimen/height_product"
@@ -571,12 +600,14 @@
                 android:textColor="@color/orange_shopee"
                 android:gravity="center"/>
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
                 app:layout_constraintBottom_toTopOf="@id/product_three_price"
                 app:layout_constraintStart_toStartOf="@id/product_three_img"
                 android:src="@drawable/ic_gratis_ongkir"/>
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:id="@+id/discount_banner_three"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -596,6 +627,7 @@
                 android:textColor="@color/orange_shopee"
                 />
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:id="@+id/product_four_img"
                 android:layout_width="@dimen/width_product"
                 android:layout_height="@dimen/height_product"
@@ -627,12 +659,14 @@
                 android:textColor="@color/orange_shopee"
                 android:gravity="center"/>
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
                 app:layout_constraintBottom_toTopOf="@id/product_four_price"
                 app:layout_constraintStart_toStartOf="@id/product_four_img"
                 android:src="@drawable/ic_gratis_ongkir"/>
             <ImageView
+                android:contentDescription="@string/product_section"
                 android:id="@+id/discount_banner_four"
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -662,6 +696,7 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:contentDescription="@string/header_section"
             android:id="@+id/header_bg"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -672,6 +707,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:contentDescription="@string/header_section"
             android:id="@+id/search_bg"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -697,6 +733,7 @@
             app:layout_constraintWidth_percent="0.6" />
 
         <ImageButton
+            android:contentDescription="@string/header_section"
             android:id="@+id/cart_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
@@ -709,6 +746,7 @@
             app:layout_constraintTop_toTopOf="@id/search_button" />
 
         <ImageButton
+            android:contentDescription="@string/header_section"
             android:id="@+id/chat_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"

@@ -21,4 +21,17 @@
     <string name="product_two_price">Rp5.000</string>
     <string name="product_three_price">Rp70.000</string>
     <string name="product_four_price">Rp300.000</string>
+    <string name="promo_section">promo_section</string>
+    <string name="finance_section">finance section</string>
+    <string name="feature_section">feature section</string>
+    <string name="ads_section">ads section</string>
+    <string name="borderline">borderline</string>
+    <string name="flash_sale_section">flash sale section</string>
+    <string name="product_section">product section</string>
+    <string name="header_section">header section</string>
+    <string name="rekomendasi">Rekomendasi</string>
+    <string name="feed">Feed</string>
+    <string name="shopee_live">Shopee Live</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="saya">Saya</string>
 </resources>
