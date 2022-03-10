@@ -9,4 +9,8 @@
     <string name="supermarket_text">Shopee Supermarket</string>
     <string name="mall_text">Shopee Mall</string>
     <string name="deals_text">Deals Seller</string>
+    <string name="shopee_games_text">Shopee Games</string>
+    <string name="voucher_text"><![CDATA[Gratis Ongkir & Voucher]]></string>
+    <string name="cod_text">Bayar Di Tempat</string>
+    <string name="food_text">ShopeeFood</string>
 </resources>

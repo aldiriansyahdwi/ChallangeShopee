@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -9,10 +9,9 @@
     android:layout_height="wrap_content"
     >
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
     <ImageView
         android:id="@+id/promo_bg"
@@ -35,7 +34,7 @@
         android:id="@+id/promo_one"
         android:layout_width="0dp"
         android:layout_height="75dp"
-        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintWidth_percent="0.9"
         android:src="@drawable/shopee_promo_banner"
         android:background="@null"
         android:scaleType="fitCenter"
@@ -135,7 +134,7 @@
         android:layout_marginTop="@dimen/margin_height"
         android:scrollbars="none">
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
                 android:id="@+id/peduli_lindungi_btn"
@@ -149,12 +148,15 @@
                 android:background="@drawable/shadow_feature"
                 />
             <TextView
-                android:layout_width="@dimen/feature_text_size"
+                android:layout_width="@dimen/feature_text_width"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/peduli_lindungi_btn"
                 app:layout_constraintStart_toStartOf="@id/peduli_lindungi_btn"
                 app:layout_constraintEnd_toEndOf="@id/peduli_lindungi_btn"
-                android:text="@string/peduli_lindungi_text"/>
+                android:text="@string/peduli_lindungi_text"
+                android:textSize="@dimen/tiny_text_size"
+                android:gravity="center"
+                android:textColor="@color/black"/>
             <ImageView
                 android:id="@+id/pulsa_btn"
                 android:layout_width="@dimen/feature_btn_size"
@@ -167,13 +169,15 @@
                 android:layout_marginStart="@dimen/range_per_feature"
                 />
             <TextView
-                android:layout_width="@dimen/feature_text_size"
+                android:layout_width="@dimen/feature_text_width"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/pulsa_btn"
                 app:layout_constraintStart_toStartOf="@id/pulsa_btn"
                 app:layout_constraintEnd_toEndOf="@id/pulsa_btn"
                 android:gravity="center"
-                android:text="@string/pulsa_text"/>
+                android:text="@string/pulsa_text"
+                android:textSize="@dimen/tiny_text_size"
+                android:textColor="@color/black"/>
             <ImageView
                 android:id="@+id/supermarket_btn"
                 android:layout_width="@dimen/feature_btn_size"
@@ -185,13 +189,15 @@
                 android:background="@drawable/shadow_feature"
                 android:layout_marginStart="@dimen/range_per_feature"/>
             <TextView
-                android:layout_width="@dimen/feature_text_size"
+                android:layout_width="@dimen/feature_text_width"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/supermarket_btn"
                 app:layout_constraintStart_toStartOf="@id/supermarket_btn"
                 app:layout_constraintEnd_toEndOf="@id/supermarket_btn"
                 android:gravity="center"
-                android:text="@string/supermarket_text"/>
+                android:text="@string/supermarket_text"
+                android:textSize="@dimen/tiny_text_size"
+                android:textColor="@color/black"/>
             <ImageView
                 android:id="@+id/mall_btn"
                 android:layout_width="@dimen/feature_btn_size"
@@ -203,13 +209,15 @@
                 android:scaleType="fitCenter"
                 android:background="@drawable/shadow_feature"/>
             <TextView
-                android:layout_width="@dimen/feature_text_size"
+                android:layout_width="@dimen/feature_text_width"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/mall_btn"
                 app:layout_constraintStart_toStartOf="@id/mall_btn"
                 app:layout_constraintEnd_toEndOf="@id/mall_btn"
                 android:gravity="center"
-                android:text="@string/mall_text"/>
+                android:text="@string/mall_text"
+                android:textSize="@dimen/tiny_text_size"
+                android:textColor="@color/black"/>
             <ImageView
                 android:layout_width="@dimen/feature_btn_size"
                 android:layout_height="@dimen/feature_btn_size"
@@ -221,25 +229,122 @@
                 android:scaleType="fitCenter"
                 android:background="@drawable/shadow_feature"/>
             <TextView
-                android:layout_width="@dimen/feature_text_size"
+                android:layout_width="@dimen/feature_text_width"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/deals_btn"
                 app:layout_constraintStart_toStartOf="@id/deals_btn"
                 app:layout_constraintEnd_toEndOf="@id/deals_btn"
                 android:gravity="center"
-                android:text="@string/deals_text"/>
+                android:text="@string/deals_text"
+                android:textSize="@dimen/tiny_text_size"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/voucher_btn"
+                android:layout_width="@dimen/feature_btn_size"
+                android:layout_height="@dimen/feature_btn_size"
+                app:layout_constraintTop_toBottomOf="@id/peduli_lindungi_btn"
+                app:layout_constraintStart_toStartOf="@id/peduli_lindungi_btn"
+                android:layout_marginTop="@dimen/range_per_feature"
+                android:src="@drawable/ic_voucher"
+                android:background="@drawable/shadow_feature"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:layout_width="@dimen/feature_text_width"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/voucher_btn"
+                app:layout_constraintStart_toStartOf="@id/voucher_btn"
+                app:layout_constraintEnd_toEndOf="@id/voucher_btn"
+                android:text="@string/voucher_text"
+                android:gravity="center"
+                android:textSize="@dimen/tiny_text_size"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/games_btn"
+                android:layout_width="@dimen/feature_btn_size"
+                android:layout_height="@dimen/feature_btn_size"
+                app:layout_constraintStart_toEndOf="@id/voucher_btn"
+                app:layout_constraintTop_toTopOf="@id/voucher_btn"
+                android:layout_marginStart="@dimen/range_per_feature"
+                android:src="@drawable/ic_games"
+                android:background="@drawable/shadow_feature"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:layout_width="@dimen/feature_text_width"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/games_btn"
+                app:layout_constraintStart_toStartOf="@id/games_btn"
+                app:layout_constraintEnd_toEndOf="@id/games_btn"
+                android:text="@string/shopee_games_text"
+                android:gravity="center"
+                android:textSize="@dimen/tiny_text_size"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/cod_btn"
+                android:layout_width="@dimen/feature_btn_size"
+                android:layout_height="@dimen/feature_btn_size"
+                app:layout_constraintTop_toTopOf="@id/voucher_btn"
+                app:layout_constraintStart_toEndOf="@id/games_btn"
+                android:layout_marginStart="@dimen/range_per_feature"
+                android:src="@drawable/ic_cod"
+                android:background="@drawable/shadow_feature"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:layout_width="@dimen/feature_text_width"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/cod_btn"
+                app:layout_constraintEnd_toEndOf="@id/cod_btn"
+                app:layout_constraintTop_toBottomOf="@id/cod_btn"
+                android:text="@string/cod_text"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tiny_text_size"/>
+            <ImageView
+                android:id="@+id/food_btn"
+                android:layout_width="@dimen/feature_btn_size"
+                android:layout_height="@dimen/feature_btn_size"
+                app:layout_constraintStart_toEndOf="@id/cod_btn"
+                app:layout_constraintTop_toTopOf="@id/voucher_btn"
+                android:src="@drawable/ic_food"
+                android:background="@drawable/shadow_feature"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="@dimen/range_per_feature" />
+            <TextView
+                android:layout_width="@dimen/feature_text_width"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/food_btn"
+                app:layout_constraintStart_toStartOf="@id/food_btn"
+                app:layout_constraintEnd_toEndOf="@id/food_btn"
+                android:text="@string/food_text"
+                android:textSize="@dimen/tiny_text_size"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/satu_rupiah_btn"
+                android:layout_width="@dimen/feature_btn_size"
+                android:layout_height="@dimen/feature_btn_size"
+                app:layout_constraintStart_toEndOf="@id/food_btn"
+                app:layout_constraintTop_toTopOf="@id/voucher_btn"
+                android:layout_marginStart="@dimen/range_per_feature"
+                android:src="@drawable/ic_one"
+                android:background="@drawable/shadow_feature"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:layout_width="@dimen/feature_text_width"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/satu_rupiah_btn"
+                app:layout_constraintEnd_toEndOf="@id/satu_rupiah_btn"
+                app:layout_constraintTop_toBottomOf="@id/satu_rupiah_btn"
+                android:text="Serba Satu Rupiah"
+                android:textSize="@dimen/tiny_text_size"
+                android:textColor="@color/black"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

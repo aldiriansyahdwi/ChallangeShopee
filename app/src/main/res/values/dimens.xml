@@ -6,8 +6,8 @@
     <dimen name="small_text_size">14sp</dimen>
     <dimen name="tiny_text_size">10sp</dimen>
     <dimen name="margin_height">10dp</dimen>
-    <dimen name="feature_btn_size">50dp</dimen>
+    <dimen name="feature_btn_size">40dp</dimen>
     <dimen name="start_width_feature">40dp</dimen>
     <dimen name="range_per_feature">50dp</dimen>
-    <dimen name="feature_text_size">100sp</dimen>
+    <dimen name="feature_text_width">90sp</dimen>
 </resources>
