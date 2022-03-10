@@ -10,4 +10,5 @@
     <dimen name="start_width_feature">40dp</dimen>
     <dimen name="range_per_feature">50dp</dimen>
     <dimen name="feature_text_width">90sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
 </resources>

@@ -13,4 +13,6 @@
     <string name="voucher_text"><![CDATA[Gratis Ongkir & Voucher]]></string>
     <string name="cod_text">Bayar Di Tempat</string>
     <string name="food_text">ShopeeFood</string>
+    <string name="satu_rupiah_text">Serba Satu Rupiah</string>
+    <string name="flash_sale_text"><b>FLASH</b> SALE</string>
 </resources>
