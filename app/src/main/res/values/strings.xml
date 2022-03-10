@@ -15,4 +15,10 @@
     <string name="food_text">ShopeeFood</string>
     <string name="satu_rupiah_text">Serba Satu Rupiah</string>
     <string name="flash_sale_text"><b>FLASH</b> SALE</string>
+    <string name="discount_product"><b>50%</b>OFF</string>
+    <string name="lainnya_text">Lihat Lainnya</string>
+    <string name="product_one_price">Rp6.000.000</string>
+    <string name="product_two_price">Rp5.000</string>
+    <string name="product_three_price">Rp70.000</string>
+    <string name="product_four_price">Rp300.000</string>
 </resources>
